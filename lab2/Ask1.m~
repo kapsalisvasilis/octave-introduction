@@ -1,0 +1,40 @@
+clear;
+clear all
+#ASK1-1
+clear;
+clear all
+w = -400:1:400;
+H = 1 ./(j*w+3)
+figure(1);
+plot(w,abs(H));
+title('absH of (w)');
+xlabel('w');
+ylabel('abs(H(w)');
+saveas(1,'Ask1-1-0.jpg');
+figure(2);
+plot(w,angle(H));
+title('angleH(w)');
+xlabel('w');
+ylabel('angle of H(w)');
+saveas(2,'Ask1-1-1.jpg');
+#ASK1-2
+clear;
+clear all
+w = -400:1:400;
+H = (j*w+2) ./ j*w+3;
+figure(3)
+plot(w,abs(H));
+title('abs of H(w)');
+xlabel('w');
+ylabel('abs of H(w)');
+saveas(2,'Ask1-2-1.jpg');
+figure(4);
+plot(w,angle(H));
+title('angle of H(w)');
+xlabel('w');
+ylabel('angle of H(w)');
+saveas(2,'Ask1-2-2.jpg');
+
+
+
+

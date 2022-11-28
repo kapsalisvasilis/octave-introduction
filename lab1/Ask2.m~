@@ -1,0 +1,6 @@
+n = 0:0.01:45;
+y= cos (((1.7 * pi * n) /10)
+stem (n ,y );
+xlabel('t', 'fontsize', 17);
+ylabel('y', 'fontsize', 17);
+axis([0 6 -2 2]);
